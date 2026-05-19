@@ -38,7 +38,7 @@ export const LESSONS: Lesson[] = [
   },
   {
     id: "4",
-    title: "Range Rover",
+    title: "Land Rover",
     slug: "module4",
     lessonsList: [
       "Defender",
@@ -48,7 +48,7 @@ export const LESSONS: Lesson[] = [
   },
   {
     id: "5",
-    title: "Keonigsegg",
+    title: "Koenigsegg",
     slug: "module5",
     lessonsList: [
       "Agera RS",

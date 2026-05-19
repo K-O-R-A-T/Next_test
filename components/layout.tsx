@@ -2,7 +2,7 @@ import { PropsWithChildren } from "react";
 
 export const PageLayout = (props: PropsWithChildren) => {
   return (
-    <div className="flex flex-col p-4 gap-4 max-w-md mr-auto min-h-full border-x">
+    <div className="flex flex-col p-4 gap-4 w-full min-h-full">
       {props.children}
     </div>
   );

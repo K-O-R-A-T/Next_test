@@ -45,6 +45,17 @@ export default function RootLayout({
                 height={36} 
               />
             </Link>
+            <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
+              <Link href="/formation" className="hover:text-white transition-colors">
+                Catalogue
+              </Link>
+              <Link href="#" className="hover:text-white transition-colors">
+                Marques
+              </Link>
+              <Link href="#" className="hover:text-white transition-colors">
+                Contact
+              </Link>
+            </nav>
             <ThemeToggle />
           </header>
 
