@@ -20,7 +20,7 @@ export default function ContactPage() {
     const id = crypto.randomUUID(); 
     const currentDate = new Date().toISOString();
 
-    const maCleSupabaseComplete = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpidndsaGRvd3liam5vdGh2ZHliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkzNjA4MTMsImV4cCI6MjA5NDkzNjgxM30.tPgL6fLI9NbWfVXMQw-0Q1saI7Z1bLX82UAmpi2ytjw"; 
+    const maCleSupabaseComplete = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
     try {
         const response = await fetch(
@@ -33,7 +33,6 @@ export default function ContactPage() {
                 "Content-Type": "application/json",
                 "Prefer": "return=minimal"
             },
-            // 🌟 ON AJOUTE LES DEUX COLONNES DANS L'ENVOI
             body: JSON.stringify({ 
                 id, 
                 name, 

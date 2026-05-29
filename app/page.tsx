@@ -10,7 +10,7 @@ interface Review {
 
 export default async function Home() {
   let reviews: Review[] = [];
-  const maCleSupabaseComplete = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpidndsaGRvd3liam5vdGh2ZHliIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzkzNjA4MTMsImV4cCI6MjA5NDkzNjgxM30.tPgL6fLI9NbWfVXMQw-0Q1saI7Z1bLX82UAmpi2ytjw"; // Laisse ta clé eyJ...
+  const maCleSupabaseComplete = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
 
   try {
     const response = await fetch(
